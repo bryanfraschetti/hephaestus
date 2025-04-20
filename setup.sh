@@ -1,3 +1,3 @@
 #!/usr/bin/bash
 mv ~/.bashrc ~/.bashrc.save
-cp -r $(pwd)/ ~/
+rsync -av --exclude='.git' --exclude='cron*' --exclude='setup.sh' "$(pwd)/" ~/
