@@ -1,2 +1,3 @@
 #!/usr/bin/bash
-cp -r $(pwd)/ ~
+mv ~/.bashrc ~/.bashrc.save
+cp -r $(pwd)/ ~/
