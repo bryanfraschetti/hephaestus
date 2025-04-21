@@ -95,7 +95,7 @@ source ~/.bash_prompt.d/aliases/pkg-management.sh
 source ~/.bash_prompt.d/aliases/my-macros.sh
 source ~/.bash_prompt.d/aliases/my-vpn.sh
 alias sss='sudo systemctl'
-alias bas='ssh -i ~/.ssh/id_rsa <user>@<ps6-ip>'
+#alias bas='ssh -i ~/.ssh/id_rsa <user>@<ps6-ip>'
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -109,10 +109,10 @@ if ! shopt -oq posix; then
 fi
 
 export PATH=$PATH:/usr/local/go/bin
-source ~/lab/novarc
+#source ~/lab/novarc
 export EMAIL="bryan.fraschetti@canonical.com"
 export DEBEMAIL=$EMAIL
 source ~/.vimrc
 export EDITOR=vim
 alias pubip="curl ifconfig.me"
-expect ~/.bash_prompt.d/macros/no-ssh-pw.sh > /dev/null
+#expect ~/.bash_prompt.d/macros/no-ssh-pw.sh > /dev/null
