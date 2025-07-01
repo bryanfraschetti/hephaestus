@@ -14,10 +14,9 @@ HISTCONTROL=ignoreboth
 
 # append to the history file, don't overwrite it
 shopt -s histappend
-
-# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
 HISTSIZE=1000
-HISTFILESIZE=10000
+HISTFILESIZE=25000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.

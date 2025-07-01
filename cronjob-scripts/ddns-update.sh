@@ -14,7 +14,7 @@ curl https://api.cloudflare.com/client/v4/zones/$ZONE_ID/dns_records/$DNS_RECORD
       "comment": "Domain verification record",
       "content": "'"$EXTERNAL_IP"'",
       "name": "<domain-name>",
-      "proxied": true,
+      "proxied": false,
       "ttl": 3600,
       "type": "A"
     }' >> /var/log/ddns-update.log 2>&1

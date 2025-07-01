@@ -21,4 +21,4 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
-0 * * * * /usr/bin/update-ddns.sh
+0 * * * * /usr/bin/ddns-update.sh >> /var/log/ddns-update.log 2>&1
